@@ -1,0 +1,18 @@
+tags:
+  - name : Upload Data Tweet Untuk Neural Network
+post:
+    description : file csv yang akan diupload
+    consumes : multiplat/form-data
+parameters:
+  - name: file
+    in: formData
+    description : file yang diupload
+    required: true
+    type: file
+responses:
+    '200':
+      description: Successful request
+    '400':
+      description: Bad request, pastikan file yang diupload adalah file csv
+    '500':
+      description: Internal server error
